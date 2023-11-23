@@ -1,0 +1,276 @@
+$colorBg: #f8f7f7;
+
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&family=Marck+Script&family=Oswald:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&family=Marck+Script&family=Oswald:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.pagina-inicial{
+    
+
+.secao-0{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+         img{
+           height: 70px;
+           margin-top: 50px;
+           margin-left: 30px;
+           
+        }
+   
+         a {
+
+         font-size: 16px;
+         background-color:black;
+         color: white; 
+         padding: 10px 14px;   
+         border-radius: 5px;
+         transition: all linear 160ms;
+         cursor: pointer;
+         text-decoration: none;
+         margin-right: 50px;
+  
+        }
+      }
+          a:hover{
+          box-shadow: 0 8px 15px rgba(0,0,0,.2) ;
+
+        }
+      
+      }
+.secao-01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+        img{
+        max-width:100%;
+        height:400px;
+        margin-left: 50px;
+        margin-top: 20px;
+     
+    } 
+}
+
+.conteiner-texto{
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+            h3{
+            width: 900px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 10px;
+            font-family: 'Literata', serif;
+            
+          }
+
+             p{
+             font-size: 80px;
+             text-align: center;
+             line-height: 20px;
+             font-family: 'Literata', serif;
+
+    }
+}
+
+.secao-02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f7f7;
+    
+    
+} 
+.conteudo{    
+
+       h1{
+         display: flex;
+         height: 100px;
+         justify-content: center;
+         align-items: center;
+         font-size: 50px;
+         font-family: 'Marck Script', cursive;
+         
+         
+       }
+
+       p{
+         align-items: center;
+         justify-content: center;
+         font-size: 25px;
+         width: 790px;
+         text-align:center;
+         margin-bottom: 80px;
+         font-family: 'Montserrat', sans-serif;
+         
+       }
+}
+
+
+.secao-titulo{ 
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+   margin-top: 60px;
+   font-family: 'Literata', serif;
+
+       h2{
+        text-align: center;
+        font-size: 25px;
+       }
+
+       p{
+        text-align: center;
+        font-size: 18px;
+
+       }
+}
+
+.secao-03{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 80px;
+   margin-bottom: 80px;
+
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 5px;
+          font-family: 'Montserrat', sans-serif;
+          
+        }    
+        
+        
+          
+}
+
+.secao-04{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+
+}
+
+
+@media (max-width: 768px) {
+  
+  .pagina-inicial .secao-0{
+    img{
+        height: 40px;
+    }
+}
+  
+  .secao-01 img{
+    height: 220px;
+    position: absolute;
+    top: -130px;
+    width: 50%;
+  
+  }
+
+  .conteiner-texto h3{
+    font-size: 20px;
+     width: 55px;
+     margin-left: 50px;
+     
+  }
+
+  .conteiner-texto p{
+    font-size: 30px;
+    margin-right: 70px;
+    
+    
+    
+  }
+  
+  .secao-02 h1{    
+    width: 100%;
+    font-size: 30px;
+    
+  
+  }  
+  
+  .secao-02 p{ 
+    width: 100%;
+    font-size: 16px;
+  
+  }   
+
+.secao-titulo{
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+
+ .pagina-inicial .secao-0{
+      img{
+          height: 40px;
+      }
+ }
+  .secao-01 {
+         img{
+    height: 150px;
+    position: absolute;
+    top: -85px;
+   
+         }
+  }
+  .conteiner-texto{
+     margin-right: -40px;
+     
+  }
+  .conteiner-texto h3{
+    font-size: 15px;
+    margin-left: 28px; 
+    
+  }
+
+  .conteiner-texto p{
+    font-size: 20px;
+    
+    
+  }
+  
+  .secao-02 {
+       h1{    
+    width: 100%;
+   font-size: 30px;
+    
+  }  
+}
+  .secao-02 p{ 
+    width: 100%;
+    font-size: 16px;
+  
+  }   
+
+.secao-titulo{
+      h2{
+        font-size: 20px;
+      }
+      p{
+        font-size: 14px;
+      }
+}
+
+.secao-03 {
+  display: block;
+  text-align: center;
+  
+   }
+ 
+  }
+}

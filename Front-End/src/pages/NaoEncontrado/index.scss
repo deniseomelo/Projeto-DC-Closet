@@ -1,0 +1,30 @@
+.pagina-NaoEncontrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+
+
+.conteiner-erro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #e74c3c; /* Vermelho */
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #a9aeb1; /* Azul */
+    font-weight: bold;
+}
+}

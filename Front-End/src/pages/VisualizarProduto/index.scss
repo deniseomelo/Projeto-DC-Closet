@@ -1,0 +1,165 @@
+
+/* Reset default margin and padding */
+
+  
+  $colorBg: #f8f7f7;
+  
+  @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&family=Marck+Script&family=Oswald:wght@300;600&display=swap');
+  
+  .pagina-VisualizarProduto{
+      img {
+          width: 50px;
+          margin: auto;
+          display: block;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        } 
+  }
+  
+  .page {
+    
+    background-color: #f8f7f7;
+    display: flex;
+    flex-direction: column;   
+    padding: 80px 80px;
+    background-color: $colorBg;
+    gap: 25px;
+    margin-left: 400px;
+    margin-right: 400px; 
+    margin-bottom: 70px;
+    align-items: center;
+        h1 {
+            display: flex;
+            justify-content: center;
+            line-height: 50px; 
+            font-family: 'Literata', serif;
+          
+        }
+  }
+  
+  .busca-barra {
+    margin: 10px 0px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+     
+  }
+  
+    button {
+  
+    padding: 6px 15px;
+    background-color: #0d0d0e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2) ;
+   
+  }
+  
+  
+  .produto-lista {
+   
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    
+
+  }
+  
+  .produto {
+    width: 300px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .produto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  
+  .editar-button:hover,
+  .deletar-button:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,.2) ;
+  }
+    
+     
+  .produto img {
+    max-width: 100%;
+    
+  }
+  
+  .editar-button{
+          
+    padding:5px 10px;
+    margin: 5px;
+    background-color: rgb(0, 255, 106);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
+
+ .deletar-button {
+    padding:5px 10px;
+    margin: 5px;
+    background-color: #eb0808e1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
+
+  
+  @media (max-width: 600px) {
+  
+    .page{
+        
+    padding: 80px 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    }
+    .produto-lista {
+      display: table-column;
+    }
+  
+    input[type="text"] {
+      padding: 6px;
+      width: 100px;
+      border: 1px solid #ccc;
+      font-size: 10px;
+  }
+    .buscar-barra button {
+    padding: 5px 15px;
+    background-color: #0d0d0e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2) ;
+  }
+  }
+  @media (max-width: 768px) {
+  
+    .page{
+    border-radius: 7px;
+    padding: 50px 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+    }
+  }
+  
+  
+  
