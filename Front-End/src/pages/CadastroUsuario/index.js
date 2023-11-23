@@ -24,7 +24,7 @@ export default function CadastroUsuario(){
                     senha: senha
                 }
     
-                const response = await axios.post('http://4.201.80.48:5000/usuario', body);
+                const response = await axios.post('http://191.234.194.31:5000/usuario', body);
                 const id = response.data.id;
     
                 alert("Usuário cadastrado. Id: " + id);
@@ -34,7 +34,7 @@ export default function CadastroUsuario(){
         }
     }  
     async function buscarUsuario() {
-        let r = await axios.get('http://4.201.80.48:5000/usuario');
+        let r = await axios.get('http://191.234.194.31:5000/usuario');
         let usuarios = r.data;
     
         setListaUsuarios(usuarios);

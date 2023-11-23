@@ -22,7 +22,7 @@ export default function EditarProduto() {
     if (codigo) {
       async function fetchData() {
         try {
-          const response = await axios.get(`http://4.201.80.48:5000/produto/${codigo}`);
+          const response = await axios.get(`http://191.234.194.31:5000/produto/${codigo}`);
           setProduto(response.data);
         } catch (error) {
           console.error('Erro ao buscar detalhes do produto:', error);
@@ -38,7 +38,7 @@ export default function EditarProduto() {
   
     console.log('Função handleSubmit está sendo chamada.');
     try {
-      await axios.put(`http://4.201.80.48:5000/produto/${codigo}`, produto);
+      await axios.put(`http://191.234.194.31:5000/produto/${codigo}`, produto);
       alert('Produto atualizado com sucesso');
     } catch (error) {
       console.error('Erro ao atualizar o produto:', error);

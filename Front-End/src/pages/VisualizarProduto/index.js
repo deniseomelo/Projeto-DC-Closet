@@ -14,7 +14,7 @@ export default function VisualizarProduto() {
 
   const buscarProdutos = async () => {
     try {
-      const response = await axios.get('http://4.201.80.48:5000/produto'); // Verifique a URL
+      const response = await axios.get('http://191.234.194.31:5000/produto'); // Verifique a URL
       const produtos = response.data;
   
       if (termoBusca) {
@@ -34,9 +34,9 @@ export default function VisualizarProduto() {
   async function remover(codigo) {
     console.log('Excluindo produto com ID:', codigo);
     try {
-      let r = await axios.delete(`http://4.201.80.48:5000/produto/${codigo}`); // Adicione uma barra (/) entre "produto" e o ID
+      let r = await axios.delete(`http://191.234.194.31:5000/produto/${codigo}`); // Adicione uma barra (/) entre "produto" e o ID
       console.log('Resposta da exclusão:', r);
-      alert('Deseja  Apagar Produto?');
+      alert('Deseja Apagar Produto?');
       buscarProdutos();
     } catch (error) {
       console.error('Erro ao excluir o produto:', error);

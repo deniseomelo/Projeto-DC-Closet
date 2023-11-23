@@ -15,7 +15,7 @@ export default function Login() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://4.201.80.48:5000/usuario');
+        const response = await axios.get('http://191.234.194.31:5000/usuario');
         setListaUsuario(response.data);
       } catch (error) {
         console.error('Erro ao buscar usuários:', error);

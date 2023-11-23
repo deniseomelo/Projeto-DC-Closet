@@ -21,7 +21,7 @@ import './index.scss';
       };
   
       try {
-        const response = await axios.post('http://4.201.80.48:5000/produto/', body);
+        const response = await axios.post('http://191.234.194.31:5000/produto/', body);
         const id = response.data.id;
         alert('Produto cadastrado. Códido:  ' + id);
       } catch (error) {
